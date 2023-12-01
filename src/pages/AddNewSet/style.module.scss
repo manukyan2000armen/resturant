@@ -1,0 +1,114 @@
+.setFoods {
+  width: 100%;
+  height: 900px;
+  //   background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .header {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    .foodsDiv1 {
+      width: 100%;
+      height: 100%;
+      //   background-color: rgb(230, 204, 167);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // flex-direction: column;
+      .foodsCard1 {
+        width: 300px;
+        height: 370px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: 0.4s;
+        input {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .foodsCard1 img:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+      }
+    }
+  }
+  .divForSave {
+    width: 100%;
+    height: 80px;
+    // background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    // flex-direction: column;
+    gap: 15px;
+    .inpAndSave {
+      width: 500px;
+      height: 80px;
+      //   background-color: aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 1px solid black;
+    }
+
+    input {
+      width: 350px;
+      height: 30px;
+      border: 1px solid grey;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100px;
+      height: 35px;
+      background-color: green;
+      color: white;
+      font-size: 17px;
+      border: none;
+      border-radius: 5px;
+      transition: 0.3s;
+      &:hover {
+        transition: 0.3s;
+        background-color: rgb(25, 179, 25);
+        cursor: pointer;
+      }
+    }
+    .forRadio {
+      width: 500px;
+      height: 80px;
+      //   background-color: aqua;
+      border-bottom: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      input {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

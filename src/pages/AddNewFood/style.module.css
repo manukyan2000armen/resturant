@@ -1,0 +1,77 @@
+.myForm {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/public/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.myForm h1 {
+  font-size: 35px;
+  color: white;
+  font-family: monospace;
+}
+.forForm {
+  width: 950px;
+  height: 600px;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.form {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.652);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.form form {
+  width: 100%;
+  height: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.form input {
+  width: 400px;
+  height: 40px;
+  /* border: 1px solid black; */
+  border: none;
+  border-radius: 5px;
+}
+.form select {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+.form .btnForSave {
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+  font-size: 17px;
+  font-family: monospace;
+  transition: 0.2s;
+  letter-spacing: 3px;
+}
+.btnForSave:hover {
+  transition: 0.2s;
+  background-color: rgb(104, 177, 104);
+  cursor: pointer;
+}
